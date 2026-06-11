@@ -134,6 +134,12 @@
     .hero__overlay { max-width: 55%; padding-left: 4%; }
   }
   @media (max-width: 600px) {
+    .nav { padding: 12px 16px; }
+    .nav__inner { gap: 8px; flex-wrap: nowrap; }
+    .logo { flex-shrink: 0; }
+    .logo svg { width: 104px !important; }
+    .nav__actions { gap: 8px; flex-shrink: 0; }
+    .btn-pill { padding: 8px 13px; font-size: 12px; border-width: 1.5px; white-space: nowrap; }
     .hero__bg-img { max-height: 340px; object-position: 70% center; }
     .hero__overlay { max-width: 100%; background: rgba(61,0,102,0.55); padding: 24px; align-items: flex-end; }
     .hero__title { font-size: 24px; }
@@ -1067,7 +1073,8 @@
   .backed__logo-item:hover { opacity: 1; }
   @media (max-width: 700px) {
     .backed__logos { gap: 20px 28px; justify-content: center; }
-    .backed__logo-item svg { max-width: 100px !important; height: 28px !important; }
+    .backed__logo-item svg { max-width: 100px !important; max-height: 28px !important; height: auto !important; width: auto !important; }
+    .backed__logo-item img { max-width: 100px !important; max-height: 28px !important; height: auto !important; width: auto !important; }
   }
 
   /* =========================================================
